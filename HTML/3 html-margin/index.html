@@ -1,14 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Elements</title>
-</head>
-<body>
-    <form action="result.html">
+  </head>
+  <body>
+    <form action="result.html" method="GET" name="myForm">
+      <div>
+        <label for="cars">Choose a car:</label>
+        <br />
+        <select name="cars-select" id="cars" size="7" multiple required>
+          <optgroup label="Expensive Cars">
+            <option value="Porche">Porche</option>
+            <option value="Tesla" selected>Tesla</option>
+          </optgroup>
+          <optgroup label="Others">
+            <option value="C180">C180</option>
+            <option value="Megane">Megane</option>
+            <option value="Sportage">Sportage</option>
+          </optgroup>
+        </select>
+      </div>
+      <br />
+      <hr />
+      <div>
+        <label for="message">Enter your comment here</label>
+        <br />
+        <textarea
+          name="comment"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Enter comments here..."
+          style="width: 200px; height: 200px; resize: none"
+          required
+        ></textarea>
+      </div>
 
+      <br />
+      <hr />
+
+      <div>
+        <label for="myBrowser">Browser:</label>
+        <br />
+        <input
+          type="text"
+          name="browser-option"
+          id="myBrowser"
+          list="browsers"
+        />
+
+        <datalist id="browsers">
+          <option value="Chrome"></option>
+          <option value="IE"></option>
+          <option value="Edge"></option>
+          <option value="Safari"></option>
+        </datalist>
+      </div>
+      <br />
+      <hr />
+
+      <div>
+        <fieldset style="width: 50%;">
+          <legend>Personel Info:</legend>
+          <label for="firstname">First Name:</label>
+          <input type="text" name="name" id="firstname" placeholder="name" />
+          <br /><br />
+          <label for="surname">Surname:</label>
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="surname"
+          />
+          <br /><br />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="e-mail" />
+        </fieldset>
+      </div>
+      <br><br>
+      <div>
+        <input type="submit" value="SEND" />
+      </div>
     </form>
-</body>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
 </html>
