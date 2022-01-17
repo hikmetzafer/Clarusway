@@ -7,8 +7,128 @@
     <title>Form Elements</title>
 </head>
 <body>
-    <form action="http://www.clarusway.com/action_page.php">
-        <h2>This is a form</h2>
-    </form>
+    <form action="">
+        <h1>SİZİ TANIYALIM</h1>
+                <!-- INPUT TEXT PASSWORD -->
+        <div>
+            <label for="isim">İSİM:</label>
+            <input type="text" name="firstname" id="isim" placeholder="İsminizi yazınız...">
+
+            <br><br>
+
+            <label for="soyisim">SOYİSİM:</label>
+            <input type="text" name="surname" id="soyisim" placeholder="Soyisminizi yazınız...">
+
+            <br><br>
+
+            <label for="parola">ŞİFRE:</label>
+            <input type="password" name="password" id="parola" placeholder="Şifrenizi yazınız...">
+
+        </div>
+        <hr>
+
+                <!-- RADIO BUTTON -->
+
+        <div>
+            <h3>CİNSİYET</h3>
+            
+            <input type="radio" name="cinsiyet" id="gender1">
+            <label for="gender1">Erkek</label>
+
+            <input type="radio" name="cinsiyet" id="gender2">
+            <label for="gender2">Kadın</label>
+        </div>
+
+        <br>
+        <hr>
+                <!-- CHECKBOX -->
+
+        <div>
+            <h3>FAVORİ ARAÇ MARKASI:</h3>
+
+            <input type="checkbox" name="megane" id="megane">
+            <label for="megane">Megane</label>
+
+            <input type="checkbox" name="sportage" id="sportage">
+            <label for="sportage">Sportage</label>
+
+            <input type="checkbox" name="sandero" id="sandero">
+            <label for="sandero">Sandero</label>
+
+            <input type="checkbox" name="duster" id="duster">
+            <label for="duster">Duster</label>
+
+        </div>
+
+        <br>
+        <hr>
+                <!-- OTHERS -->
+        <div>
+            <label for="yaş">YAŞ:</label>
+            <input type="number" name="age" id="yaş" min=18 max=99>
+        </div>
+        <br>
+        <hr>
+
+        <div>
+            <label for="ara">Kitap ara:</label>
+            <input type="serach" name="search" id="ara" placeholder="Aranacak kelimeyi giriniz...">
+        </div>
+
+        <br><hr>
+
+        <div>
+            <label for="renk">Temanızı Seçiniz</label>
+            <input type="color" name="color" id="renk">
+        </div>
+
+        <br><hr>
+
+        <div>
+            <label for="eposta">Email:</label>
+            <input type="email" name="email" id="eposta" placeholder="example@example.com">
+        </div>
+
+        <br><hr>
+
+        <div>
+            <label for="dosya">Profil Fotoğrafı:</label>
+            <input type="file" name="file" id="dosya">
+        </div>
+
+        <br><hr>
+
+        <div>
+            <label for="tel">Telefon No:</label>
+            <input type="tel" name="phoneNumber" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="123-123-12-12">
+        </div>
+
+        <br><hr>
+
+        <div>
+            <label for="takım">Hangi takımı tutuyorsunuz?</label>
+            <select name="team" id="takım">
+                <option value="GS">Galatasaray</option>
+                <option value="FB">Fenerbahçe</option>
+                <option value="TS" selected>Trabzonspor</option>
+                <option value="BJK">Beşiktaş</option>
+            </select>
+        </div>
+
+        <br><hr>
+
+        <div>
+            <label for="doğum">Doğum Tarihinizi Seçiniz:</label>
+            <input type="date" name="date" id="doğum" value="2002-01-01" min="1940-01-01" max="2004-01-01">
+        </div>
+
+        <br><hr>
+
+        <div>
+            <input type="reset">
+            <input type="submit">
+        </div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
