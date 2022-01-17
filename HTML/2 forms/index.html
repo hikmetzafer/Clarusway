@@ -5,37 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Elements</title>
+    <style>
+        #userInfo{
+            background-color: rgba(255, 255, 0, 0.5);
+        }
+
+        #genderInfo{
+            background-color: #9292ee;
+            border-top: 10px solid deepskyblue;
+        }
+
+        #favourite{
+            /* border-width: 10px;
+            border-style:groove;
+            border-color: red; */
+
+            border: 10px groove darkcyan;
+            /* border-radius: 15px; */
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px ;
+        }
+
+        input{
+            background-color: rgb(168, 163, 163);
+        }
+
+        #yaş{
+            background-color: darkorchid;
+        }
+
+    </style>
 </head>
 <body>
-    <form action="">
+    <form action="result.html">
         <h1>SİZİ TANIYALIM</h1>
                 <!-- INPUT TEXT PASSWORD -->
-        <div>
+        <div id="userInfo">
             <label for="isim">İSİM:</label>
-            <input type="text" name="firstname" id="isim" placeholder="İsminizi yazınız...">
+            <input type="text" name="firstname" id="isim" placeholder="İsminizi yazınız..." required>
 
             <br><br>
 
             <label for="soyisim">SOYİSİM:</label>
-            <input type="text" name="surname" id="soyisim" placeholder="Soyisminizi yazınız...">
+            <input type="text" name="surname" id="soyisim" placeholder="Soyisminizi yazınız..." required>
 
             <br><br>
 
             <label for="parola">ŞİFRE:</label>
-            <input type="password" name="password" id="parola" placeholder="Şifrenizi yazınız...">
+            <input type="password" name="password" id="parola" placeholder="Şifrenizi yazınız..." required>
 
         </div>
         <hr>
 
                 <!-- RADIO BUTTON -->
 
-        <div>
+        <div id="genderInfo">
             <h3>CİNSİYET</h3>
             
-            <input type="radio" name="cinsiyet" id="gender1">
+            <input type="radio" name="cinsiyet" id="gender1" value="erkek">
             <label for="gender1">Erkek</label>
 
-            <input type="radio" name="cinsiyet" id="gender2">
+            <input type="radio" name="cinsiyet" id="gender2" value="kadın">
             <label for="gender2">Kadın</label>
         </div>
 
@@ -43,7 +73,7 @@
         <hr>
                 <!-- CHECKBOX -->
 
-        <div>
+        <div id="favourite">
             <h3>FAVORİ ARAÇ MARKASI:</h3>
 
             <input type="checkbox" name="megane" id="megane">
@@ -86,7 +116,7 @@
 
         <div>
             <label for="eposta">Email:</label>
-            <input type="email" name="email" id="eposta" placeholder="example@example.com">
+            <input type="email" name="email" id="eposta" placeholder="example@example.com" required>
         </div>
 
         <br><hr>
