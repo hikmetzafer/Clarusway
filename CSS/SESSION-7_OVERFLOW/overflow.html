@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box {
+            border: 3px solid red;
+            width: 300px;
+            height: 70px;
+            margin-bottom: 50px;
+            /* padding-bottom: 50px; */
+        }
+
+        #item1 {
+            overflow: visible;
+        }
+        #item2 {
+            overflow: hidden;
+        }
+        #item3 {
+            overflow: scroll;
+        }
+        #item4 {
+            overflow: auto;
+        }
+        #item5 {
+            /* overflow-x: scroll;
+            overflow-y: scroll; */
+            overflow: auto;
+        }
+
+        #parag5{
+            width: 1000px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="item1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus delectus doloribus, officiis officia vero amet nam quam voluptates id earum animi sed commodi ex aperiam ullam accusamus exercitationem consectetur optio architecto fuga labore. Distinctio veniam nam perferendis ipsa, accusantium vitae.
+    </div>
+    <div class="box" id="item2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure deleniti harum eligendi in modi officia reprehenderit beatae, officiis nihil autem maxime, ipsam, laboriosam nulla enim. Numquam distinctio minus tempora? Magni quidem asperiores aspernatur fugiat, doloribus dignissimos consectetur minima ipsum officia.
+    </div>
+    <div class="box" id="item3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit error ad earum totam libero natus voluptas dolorem officiis possimus a debitis eveniet vero minus ipsum exercitationem asperiores incidunt, accusamus architecto quas praesentium ducimus excepturi laboriosam omnis. Recusandae suscipit vero inventore!
+    </div>
+    <div class="box" id="item4">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, provident explicabo! Cum, sapiente tempore! Ex provident, et excepturi pariatur eum dolorem nihil quis consequatur, quod porro architecto quos reiciendis odio fugiat corporis rerum doloremque possimus illo! Quidem dolor nihil vero.
+    </div>
+    <div class="box" id="item5">
+        <p id="parag5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error beatae dolor recusandae consequatur. Facere, explicabo! Vero neque iste in, nisi quas commodi saepe. Vel voluptates optio velit rem laborum sed praesentium ipsum, doloremque dicta, nemo nisi, fugiat sit impedit totam.
+        </p>
+       
+    </div>
+</body>
+</html>
