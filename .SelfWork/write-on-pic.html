@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note-on-Pic</title>
+    <style>
+        .work1{
+            position: relative;
+        }
+        .note1{
+            position: absolute; left: 10px;top: 70px;
+            opacity: 1;
+            /* z-index: 1; */
+            border: 1px solid red;
+        }
+        img {
+            position: absolute;
+            /* z-index: 1;  */
+            /* opacity: 0.5; */
+        }
+
+        img:hover{
+            position: absolute;
+            z-index: 0;
+            /* z-index: 2; */
+            opacity: 0.5;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SELFWORK ON CSS</h1>
+    </header>
+    <section>
+        <div class="work1">
+            <h3>Let's Try...</h3>
+            <h4>Photo-1</h4>
+            <p class="note1">
+                Lorem, ipsum dolor.
+            </p>
+            <img src="https://picsum.photos/id/688/400/270" alt="Resim bulunamadı">
+        </div>
+
+    </section>
+
+</body>
+</html>
