@@ -6,45 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Float Examples</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         header{
             background-color: aqua;
             border: 1px solid black;
         }
         main {
-            background-color: bisque;
-            border: 1px solid black;
+            background-color: blueviolet;
             padding: 20px;
-            height: 500px;
-            /* overflow: auto; */
+            border: 1px solid black;
+            /* height: 500px; */
+            overflow: auto;
         }
         aside {
-            background-color: blue;
+            background-color: chartreuse;
             border: 1px solid black;
             width: 25%;
             height: 300px;
             float: left;
         }
         article {
-            background-color: blueviolet;
+            background-color: coral;
             border: 1px solid black;
             width: 70%;
             height: 300px;
             float: right;
         }
         footer {
-            background-color: yellowgreen;
+            background-color: darkgray;
             border: 1px solid black;
         }
-
-        /* .clear{
+        /* .clear {
             clear: both;
         } */
 
-        /* .clearfix {
+        /* .clearfix::after {
             content: "";
             clear: both;
             display: block;
         } */
+
+     
     </style>
 </head>
 <body>
@@ -53,11 +57,14 @@
     </header>
     <main class="clearfix">
         <aside>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro veniam ipsum nihil eligendi culpa! Aperiam dolore aut autem maxime commodi perferendis accusamus quod ad.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro veniam ipsum nihil eligendi culpa! 
         </aside>
         <article>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore quod animi ipsa quos beatae nihil debitis fugiat unde. Voluptas voluptate, necessitatibus aspernatur hic nam porro, voluptates, ratione laborum nisi unde sequi. Aut facilis dolor vitae odit temporibus dicta soluta neque obcaecati aliquid, cupiditate dolorum sequi facere, quibusdam numquam quae, quos cumque omnis eveniet quisquam nam deleniti aliquam delectus. Illo perspiciatis repudiandae dolor quisquam harum nulla sint, omnis placeat recusandae, excepturi itaque aperiam odit. Accusamus veritatis iure illo distinctio est tempore sed expedita, maiores beatae enim autem delectus quos repellendus! Sunt molestias quae sapiente ab tempore, aliquam nam iure similique?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore quod animi ipsa quos beatae nihil debitis fugiat unde. Voluptas voluptate, necessitatibus aspernatur hic nam porro, voluptates, ratione laborum nisi unde sequi. Aut facilis dolor vitae odit temporibus dicta soluta neque obcaecati aliquid, cupiditate dolorum sequi facere, quibusdam numquam quae, quos cumque omnis eveniet quisquam nam deleniti aliquam delectus. 
         </article>
+        <!-- <div class="clear">
+
+        </div> -->
     </main>
     <footer>
         Webpage with Float CLARUSWAY
